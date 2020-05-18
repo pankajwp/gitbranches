@@ -10,6 +10,10 @@ app.get('/contact', (req, res) => {
 	res.status(200).send('Contact us');
 })
 
+app.get('/about', (req, res) => {
+	res.status(200).send('About Us');
+})
+
 const port  = process.env.PORT || 5000;
 
 app.listen(port, () => console.log('Server Started'));
